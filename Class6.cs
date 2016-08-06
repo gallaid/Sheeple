@@ -9,9 +9,9 @@ public class RoomSwitch : MonoBehaviour
     {
         if (thing.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("Street");
+            SceneManager.LoadScene("GodRoom");
         }
-        
+
     }
 
 }

@@ -16,6 +16,7 @@ public class SimonSays : MonoBehaviour {
     public int numberInSequence = 0;
     public SpriteRenderer Bubble;
     public Sprite[] RGB;
+    float trans = 1f;
     
 
     void Start()
@@ -32,10 +33,14 @@ public class SimonSays : MonoBehaviour {
             if (changeNumber == true)
             {
                 changeNumber = false;
-                chatBubble.fontSize = 14;
+                Bubble.color = new Color(1f, 1f, 1f, 1f);
+                trans = 1f;
                 StartCoroutine(WaitingForNextColor());
             }
-            else chatBubble.fontSize += 1;
+            else {
+                trans -= .1f;
+                Bubble.color = new Color(1f, 1f, 1f, trans);
+            }
         }
         else PlayerTurn();
     }
@@ -66,17 +71,17 @@ public class SimonSays : MonoBehaviour {
         chatBubble.fontSize = 14;
         if (RandomNumber == 1)
         {
-            chatBubble.text = "Red";
+            //chatBubble.text = "Red";
             Bubble.sprite = RGB[0];
         }else if (RandomNumber == 2)
         {
-            chatBubble.text = "Blue";
+            //chatBubble.text = "Green";
             Bubble.sprite = RGB[1];
         }
         else if (RandomNumber == 3)
         {
-            chatBubble.text = "Green";
-            Bubble.sprite = RGB[0];
+            //chatBubble.text = "Blue";
+            Bubble.sprite = RGB[2];
         }
         else
         {
@@ -86,7 +91,7 @@ public class SimonSays : MonoBehaviour {
     }
     private int numberGen()
     {
-        return UnityEngine.Random.Range(1, 3);
+        return UnityEngine.Random.Range(1, 4);
     }
     private void PlayerTurn()
     {
