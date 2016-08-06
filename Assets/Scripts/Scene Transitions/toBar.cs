@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class RoomSwitch3 : MonoBehaviour
+public class toBar : MonoBehaviour
 {
 
     void OnCollisionEnter2D(Collision2D thing)

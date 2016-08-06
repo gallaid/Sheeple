@@ -2,14 +2,14 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class RoomSwitch2 : MonoBehaviour
+public class toGodRoom : MonoBehaviour
 {
 
     void OnCollisionEnter2D(Collision2D thing)
     {
         if (thing.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("Office");
+            SceneManager.LoadScene("GodRoom");
         }
 
     }

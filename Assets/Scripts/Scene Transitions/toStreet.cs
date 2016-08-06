@@ -2,14 +2,14 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class RoomSwitch : MonoBehaviour
+public class toStreet : MonoBehaviour
 {
 
     void OnCollisionEnter2D(Collision2D thing)
     {
         if (thing.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("GodRoom");
+            SceneManager.LoadScene("Street");
         }
 
     }
