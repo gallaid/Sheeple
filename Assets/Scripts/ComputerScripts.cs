@@ -8,7 +8,7 @@ public class ComputerScripts : MonoBehaviour {
     {
         //print(other.gameObject.name);
         
-        if (other.gameObject.name== "ComputerDesk")
+        if (other.gameObject.name== "Tablet")
         {
             MissionStatus.enabled = true;
         }
@@ -17,7 +17,7 @@ public class ComputerScripts : MonoBehaviour {
     void OnTriggerExit2D(Collider2D other)
     {
         print("hello");
-        if (other.gameObject.name == "ComputerDesk")
+        if (other.gameObject.name == "Tablet")
         {
             MissionStatus.enabled = false;
         }

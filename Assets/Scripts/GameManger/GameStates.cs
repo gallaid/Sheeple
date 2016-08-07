@@ -8,6 +8,7 @@ public class GameStates : MonoBehaviour {
 
     private static GameStates _instance;
     private GameObject GameManagerObj;
+    private int totalPopulation=15;
 
     
     private static int population, belief;
@@ -29,8 +30,8 @@ public class GameStates : MonoBehaviour {
     }
     
     void Start () {
-        population = 1;
-        belief =50;
+        population = 0;
+        belief = 50;
         Gamestate gameState = Gamestate.BEGIN;
 	}
 	
@@ -41,7 +42,7 @@ public class GameStates : MonoBehaviour {
 	}
     void ChangeGameState()
     {
-        if (population > 15)
+        if (population >= 10)
             gameState = Gamestate.ADV;
         else if (population > 5)
             gameState = Gamestate.MED;
@@ -76,5 +77,13 @@ public class GameStates : MonoBehaviour {
     public GameObject GameManager
     {
         get { return GameManagerObj; }
+    }
+
+    public void checkWin()
+    {
+        if (population == totalPopulation && belief > 0)
+        {
+            //able to go to the chapel
+        }
     }
 }
