@@ -2,14 +2,14 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class toOffice : MonoBehaviour
+public class toCathedral : MonoBehaviour
 {
 
     void OnTriggerEnter(Collider thing)
     {
         if (thing.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("Office");
+            SceneManager.LoadScene("Cathedral");
         }
 
     }

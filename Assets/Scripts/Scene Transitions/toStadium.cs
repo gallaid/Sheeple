@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class toStadium : MonoBehaviour
 {
 
-    void OnCollisionEnter(Collision thing)
+    void OnTriggerEnter(Collider thing)
     {
         if (thing.gameObject.tag == "Player")
         {
