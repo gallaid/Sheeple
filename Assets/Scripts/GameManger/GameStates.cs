@@ -14,6 +14,7 @@ public class GameStates : MonoBehaviour {
     private static int population, belief;
     enum Gamestate {MENU, WIN, BEGIN, MED, ADV};
     Gamestate gameState;
+    public bool Bull;
     // Use this for initialization
     void Awake()
     {
