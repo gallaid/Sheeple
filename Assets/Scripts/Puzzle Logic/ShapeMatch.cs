@@ -19,6 +19,7 @@ public class ShapeMatch : MonoBehaviour {
         switch(miniState)
         {
             case MiniState.NPCDISPLAY:
+                //Display
                 break;
             case MiniState.PLAYERGUESS:
                 break;
@@ -33,4 +34,6 @@ public class ShapeMatch : MonoBehaviour {
         }
 	
 	}
+
+    void 
 }
