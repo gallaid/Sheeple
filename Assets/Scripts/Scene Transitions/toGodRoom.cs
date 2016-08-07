@@ -10,7 +10,7 @@ public class toGodRoom : MonoBehaviour
         print("Hello");
         if (thing.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("GodRoom");
+            SceneManager.LoadScene("GodRoom1");
         }
 
     }
