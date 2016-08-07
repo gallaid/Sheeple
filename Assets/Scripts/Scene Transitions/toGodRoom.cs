@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class toGodRoom : MonoBehaviour
 {
 
-    void OnCollisionEnter2D(Collision2D thing)
+    void OnCollisionEnter(Collision thing)
     {
         if (thing.gameObject.tag == "Player")
         {
