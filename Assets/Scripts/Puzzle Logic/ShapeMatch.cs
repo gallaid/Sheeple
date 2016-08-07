@@ -7,6 +7,7 @@ public class ShapeMatch : MonoBehaviour {
     MiniState miniState;
     enum DisplayState {SHOW1, SHOW2, SHOW3, END};
     DisplayState displayState;
+    int time;
 
 
 
@@ -18,6 +19,7 @@ public class ShapeMatch : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //time = timeGetTime()
         switch(miniState)
         {
             case MiniState.NPCDISPLAY:
@@ -42,7 +44,7 @@ public class ShapeMatch : MonoBehaviour {
                 switch (displayState)
                 {
                     case DisplayState.SHOW1:
-                        //if time < switch time 
+                        //if (time < changetime) 
                         //show first color for time
                         //else displayState = Displaystate.SHOW2
                         break;
