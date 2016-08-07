@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class toBar : MonoBehaviour
 {
 
-    void OnCollisionEnter2D(Collision2D thing)
+    void OnTriggerEnter(Collider thing)
     {
         if (thing.gameObject.tag == "Player")
         {

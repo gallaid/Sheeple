@@ -9,7 +9,7 @@ public class toStreet : MonoBehaviour
     {
         if (thing.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("Street");
+            SceneManager.LoadScene("StreetTest");
         }
 
     }
