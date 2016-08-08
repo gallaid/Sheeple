@@ -49,21 +49,4 @@ public class NPCGameManger : MonoBehaviour {
         Instantiate(converted, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
-    public void checkifdoneSS()
-    {
-        simonsays.enabled = false;
-        numberOfWinsSS++;
-        print(numberHaveToWinSS+"numberHavetowinNPC");
-        print(numberOfWinsSS+"numberofwins");
-
-        if (numberOfWinsSS >= numberHaveToWinSS)
-        {
-            
-            
-            //convert();
-        }else
-        {
-            simonsays.enabled = true;
-        }
-    }
 }

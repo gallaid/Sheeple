@@ -26,14 +26,16 @@ public class ShapeMatch : MonoBehaviour {
                 switch(displayState)
                 {
                 case DisplayState.SHOW1:
+                        //dipayiny stuff
                     break;
                 case DisplayState.SHOW2:
                     break;
                 case DisplayState.SHOW3:
                     break;
                 case DisplayState.END:
-                    displayState = DisplayState.SHOW1;
-                    miniState = MiniState.PLAYERGUESS;
+                        miniState = MiniState.PLAYERGUESS;
+                        displayState = DisplayState.SHOW1;
+
                     break;
                 default:
                     print("Das Error(NPCDISPLAY.displayState");
