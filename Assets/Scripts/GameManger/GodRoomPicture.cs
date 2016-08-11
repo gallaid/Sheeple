@@ -9,7 +9,7 @@ public class GodRoomPicture : MonoBehaviour {
 
 
 
-        print(GameStates.bull);
+        //print(GameStates.Bull);
     SpriteRenderer godPic = GetComponent<SpriteRenderer>();
         if (GameStates.Bull == true)
         {

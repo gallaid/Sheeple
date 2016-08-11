@@ -10,6 +10,7 @@ public class toGodRoom : MonoBehaviour
         print("Hello");
         if (thing.gameObject.tag == "Player")
         {
+            GameStates.SpawnLocation = SpawnLocation.CultHouse;
             SceneManager.LoadScene("GodRoom1");
         }
 

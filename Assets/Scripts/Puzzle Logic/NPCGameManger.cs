@@ -41,6 +41,9 @@ public class NPCGameManger : MonoBehaviour {
     {
 
         GameStates.Belief += 5;
+        GameStates.Population += 1;
+        GameStates.CheckGameState();
+        
         convert();
         GameEnd();
     }

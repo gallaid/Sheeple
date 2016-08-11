@@ -20,9 +20,9 @@ public class PlayerSpawnMang : MonoBehaviour {
     {
         if (GameStates.Bull == true)
         {
-            if (GameStates.male == true)
+            if (GameStates.IsMale == true)
             {
-                print("jeje");
+
                 Instantiate(MaleBull, SpawnPoint.transform.position, SpawnPoint.transform.rotation);
                 //spawn male bull
             }
@@ -32,14 +32,14 @@ public class PlayerSpawnMang : MonoBehaviour {
         }
         else
         {
-            if (GameStates.male == true)
+            if (GameStates.IsMale == true)
             {
                 Instantiate(MalePasthulu, SpawnPoint.transform.position, SpawnPoint.transform.rotation);
                 //spawn pasthulu male
             }
             else {
                 Instantiate(FemalePasthulu,SpawnPoint.transform.position, SpawnPoint.transform.rotation);
-            } //spawn pathulu female
+            } 
         }
     }
 	

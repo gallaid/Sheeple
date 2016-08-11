@@ -9,6 +9,7 @@ public class toOffice : MonoBehaviour
     {
         if (thing.gameObject.tag == "Player")
         {
+            GameStates.SpawnLocation = SpawnLocation.Office;
             SceneManager.LoadScene("Office");
         }
 

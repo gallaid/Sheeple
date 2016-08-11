@@ -41,7 +41,7 @@ public class NPCGameManger2d: MonoBehaviour {
     {
 
         GameStates.Belief += 5;
-        GameStates.population += 5;
+        GameStates.Population += 5;
         //convert();
         GameEnd();
     }

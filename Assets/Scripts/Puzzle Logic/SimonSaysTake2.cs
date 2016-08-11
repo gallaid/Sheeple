@@ -201,11 +201,6 @@ public class SimonSaysTake2 : MonoBehaviour {
         PlayerBubble.enabled = false;
     }
 
-
-
-
-
-
     int randomNum() { return UnityEngine.Random.Range(1, 4); }
 
     IEnumerator Wait()

@@ -64,24 +64,24 @@ public class TabletUI : MonoBehaviour {
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            //GameStates gs = new GameStates();
+        //if (Input.GetKeyDown(KeyCode.P))
+        //{
+        //    //GameStates gs = new GameStates();
 
-           GameStates.Population += 4;
-           GameStates.Belief += 7;
-        }
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            
-            GameStates.Population -= 4;
-            GameStates.Belief -= 7;
-        }
+        //    GameStates.Population += 4;
+        //    GameStates.Belief += 7;
+        //}
+        //if (Input.GetKeyDown(KeyCode.O))
+        //{
+
+        //    GameStates.Population -= 4;
+        //    GameStates.Belief -= 7;
+        //}
         PopSlider.value = GameStates.Population;
         BelSlider.value = GameStates.Belief;
 
     }
-        
+
 
 
 

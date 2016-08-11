@@ -2,59 +2,39 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class GameStates : MonoBehaviour {
-    public static GameStates Instance {
-        get { return _instance; }
-    }
-
-    private static GameStates _instance;
-    private GameObject GameManagerObj;
-    private int totalPopulation=15;
+public static class GameStates {
+ 
+    
+    static int totalPopulation=15;
 
     
-    public static int population, belief;
-   public enum Gamestate {MENU, WIN, BEGIN, MED, ADV};
-    Gamestate gameState;
-    public static bool bull=true;
-    public static bool male = true;
-    // Use this for initialization
-    void Awake()
+    static int population, belief;
+
+    static Gamestate gameState;
+    static Gamestate LastgameState;
+
+
+
+    public static void StartUp()
     {
-        DontDestroyOnLoad(this.gameObject);
-        if (_instance == null)
-        {
-            _instance = this;
-        }
-        else if(_instance != this)
-        {
-            Destroy(this);
-        }
-        GameManagerObj = this.gameObject;
-    }
-    
-    void Start () {
-        population = 0;
+        LastgameState = gameState;
+        gameState = Gamestate.BEGIN;
         belief = 50;
-        Gamestate gameState = Gamestate.BEGIN;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        print(belief);
-
-	}
-    void ChangeGameState()
-    {
-        if (population >= 10)
-            gameState = Gamestate.ADV;
-        else if (population > 5)
-            gameState = Gamestate.MED;
-        else
-            gameState = Gamestate.BEGIN;
+        population = 0;
     }
-    Gamestate getgameState()
+    public static SpawnLocation SpawnLocal=SpawnLocation.CultHouse;
+    static bool bull=false;
+    static bool male =false;
+
+    public static void  CheckGameState()
     {
-        return gameState;
+        CheckPop();
+        CheckBelief();
+    }
+    public static Gamestate getgameState
+    {
+        get { return gameState; }
+        set { gameState = value; }
 
     }
 
@@ -75,19 +55,15 @@ public class GameStates : MonoBehaviour {
         set { belief = value; }
     }
 
-    public void LoseCheck()
+    public static void LoseCheck()
     {
         if (belief <= 0)
         {
             //lose game load lose screen
         }
     }
-    public GameObject GameManager
-    {
-        get { return GameManagerObj; }
-    }
 
-    public void checkWin()
+    public static void checkWin()
     {
         if (population == totalPopulation && belief > 0)
         {
@@ -100,6 +76,40 @@ public class GameStates : MonoBehaviour {
         set { male = value; }
     }
 
+    public static SpawnLocation SpawnLocation
+    {
+        get { return SpawnLocal; }
+        set { SpawnLocal = value; }
+    }
+    static void CheckBelief()
+    {
+        if (belief <= 0)
+        {
+            //end game
+        }
+    }
+    static void CheckPop()
+    {
+        if (population >= 15)
+        {
+            gameState = Gamestate.END;
+        }
+        else if (population >= 10)
+            gameState = Gamestate.ADV;
+        else if (population >= 5)
+            gameState = Gamestate.MED;
+        else
+            gameState = Gamestate.BEGIN;
 
+        CheckStateChange();
+    }
+    static void CheckStateChange()
+    {
+        if (LastgameState != gameState)
+        {
+            //gui change gamestate
+            LastgameState = gameState;
+        }
+    }
 
 }

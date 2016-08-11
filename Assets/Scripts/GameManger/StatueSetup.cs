@@ -10,7 +10,7 @@ public class StatueSetup : MonoBehaviour {
 
 
 
-        print(GameStates.bull);
+       // print(GameStates.bull);
         SpriteRenderer godPic = GetComponent<SpriteRenderer>();
         if (GameStates.Bull == false)
         {

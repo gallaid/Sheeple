@@ -9,6 +9,7 @@ public class toBar : MonoBehaviour
     {
         if (thing.gameObject.tag == "Player")
         {
+            GameStates.SpawnLocation = SpawnLocation.Bar;
             SceneManager.LoadScene("Bar");
         }
 
