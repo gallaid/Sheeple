@@ -18,97 +18,149 @@ public class SimonSaysTake1 : MonoBehaviour {
 
     private int loseCounter = 0;
     public int loseNeeds = 2;
-    public float Waittime = 4f;
-    float boom = 0;
-    bool hasOne = false;
+    public int Waittime;
+
+    bool NeedColor = true;
+    bool waitingtoend=true;
     
 
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start()
+    {
         miniState = MiniState.NPCDISPLAY;
         numberCombo = new int[3];
-	
-	}
+
+        SpriteRenderer[] NPCSprites = new SpriteRenderer[3];
+        NPCSprites = GetComponentsInChildren<SpriteRenderer>();
+        foreach (SpriteRenderer sprite in NPCSprites)
+        {
+            if (sprite.name == "Speech Bubble")
+            {
+                NPCBubble = sprite;
+                //print("here");
+            }
+        }
+        SpriteRenderer[] PlayerSprites = new SpriteRenderer[3];
+        PlayerSprites = GameObject.FindGameObjectWithTag("Player").GetComponentsInChildren<SpriteRenderer>();
+        foreach (SpriteRenderer pic in PlayerSprites)
+        {
+            //print(pic.name);
+            if (pic.name == "ChatBox")
+            {
+                //print("Found CB");
+                PlayerBubble = pic;
+            }
+
+        }
+
+        
+    }
 
 
 
     void Update () {
+        game();
+	
+	}
 
-        switch(miniState)
+    int randomNum() { return Random.Range(1, 3); }
+
+    bool AmIwaiting()
+    {
+        if (waitingtoend)
+        {
+            return true;
+        }
+        else return false;
+ 
+    }
+
+   
+    IEnumerator Wait()
+    {
+        waitingtoend = true;
+        yield return new WaitForSeconds(Waittime);
+        print("afterwait");
+        waitingtoend = false;
+    }
+    void game()
+    {
+        switch (miniState)
         {
             case MiniState.NPCDISPLAY:
-                switch(displayState)
+                switch (displayState)
                 {
-                case DisplayState.SHOW1:
+                    case DisplayState.SHOW1:
+                        print(NeedColor + "bam");
 
-                        if (bam())
+                        if (NeedColor)
                         {
-                            if (!hasOne)
-                            {
-                                int randomnumber = randomNum();
-                                numberCombo[0] = randomnumber;
 
-                                NPCBubble.sprite = RGB[randomnumber];
-                                print(randomnumber);
-                                hasOne = true;
-                            }
+                            //get color
+                            int randomnumber = randomNum();
+                            numberCombo[0] = randomnumber;
 
+                            NPCBubble.sprite = RGB[randomnumber];
+                            NeedColor = false;
+
+                        }
+                        else if (AmIwaiting())
+                        {
+                            //stay here
                         }
                         else {
                             displayState = DisplayState.SHOW2;
-                            hasOne = false;
+                            NeedColor = true;
                         }
-                    break;
-                case DisplayState.SHOW2:
-                        if (bam())
+                        
+                        break;
+                    case DisplayState.SHOW2:
+                        if (NeedColor)
                         {
-                            if (!hasOne)
-                            {
-                                int randomnumber = randomNum();
-                                numberCombo[1] = randomnumber;
 
-                                NPCBubble.sprite = RGB[randomnumber];
-                                //print(randomnumber);
-                                hasOne = true;
-                            }
+                            //get color
+                            int randomnumber = randomNum();
+                            numberCombo[0] = randomnumber;
+
+                            NPCBubble.sprite = RGB[randomnumber];
+                            NeedColor = false;
 
                         }
-                        else
+                        else if (AmIwaiting())
                         {
-                            displayState = DisplayState.SHOW2;
-                            hasOne = false;
+                            //stay here
                         }
+                        else displayState = DisplayState.SHOW3;
                         break;
                     case DisplayState.SHOW3:
-                        if (bam())
+                        if (NeedColor)
                         {
-                            if (!hasOne)
-                            {
-                                int randomnumber = randomNum();
-                                numberCombo[2] = randomnumber;
 
-                                NPCBubble.sprite = RGB[randomnumber];
-                                print(randomnumber);
-                                hasOne = true;
-                            }
+                            //get color
+                            int randomnumber = randomNum();
+                            numberCombo[0] = randomnumber;
+
+                            NPCBubble.sprite = RGB[randomnumber];
+                            NeedColor = false;
 
                         }
-                        else
+                        else if (AmIwaiting())
                         {
-                            displayState = DisplayState.SHOW2;
-                            hasOne = false;
+                            //stay here
                         }
+                        else displayState = DisplayState.END;
                         break;
                     case DisplayState.END:
                         NPCBubble.sprite = RGB[3];
                         miniState = MiniState.PLAYERGUESS;
                         displayState = DisplayState.SHOW1;
 
-                    break;
-                default:
-                    print("Das Error(NPCDISPLAY.displayState");
-                    break;
+                        break;
+                    default:
+                        print("Das Error(NPCDISPLAY.displayState");
+                        break;
                 }
                 break;
             case MiniState.PLAYERGUESS:
@@ -122,12 +174,13 @@ public class SimonSaysTake1 : MonoBehaviour {
                             {
                                 //correct key
                                 print("rightkey");
-                            } else
+                            }
+                            else
                             {
                                 loseCounter++;
                                 miniState = MiniState.RESETPUZZLE;
                             }
-                         }                 
+                        }
                         break;
                     case DisplayState.SHOW2:
                         if (Input.anyKeyDown)
@@ -182,8 +235,8 @@ public class SimonSaysTake1 : MonoBehaviour {
                     miniState = MiniState.LOSE;
                     break;
                 }
-                    miniState = MiniState.NPCDISPLAY;
-                
+                miniState = MiniState.NPCDISPLAY;
+
                 break;
             case MiniState.WIN:
                 //conver
@@ -195,24 +248,8 @@ public class SimonSaysTake1 : MonoBehaviour {
                 print("Das Error(miniState)");
                 break;
         }
-        
-	
-	}
-    int randomNum() { return Random.Range(1, 3); }
-
-    bool bam()
-    {
-        
-        if (Waittime > boom)
-        {
-            boom += 0.5f;
-            return true;
-        }
-        else
-        {
-            boom = 0;
-            return false;
-        }
     }
+
+
 
 }

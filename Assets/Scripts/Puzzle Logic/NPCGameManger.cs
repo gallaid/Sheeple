@@ -3,12 +3,9 @@ using System.Collections;
 
 public class NPCGameManger : MonoBehaviour {
 
-    public SimonSays simonsays;
+    private SimonSaysTake2 simonsays;
     public GameObject converted;
-    public int numberHaveToWinSS = 5;
-    private int numberOfWinsSS = 0;
-    public int numberCanFailSS = 3;
-    private int numberOfFailsSS = 0;
+
 
 
 
@@ -16,7 +13,7 @@ public class NPCGameManger : MonoBehaviour {
     void Start()
     {
         
-        simonsays = GetComponent<SimonSays>();
+        simonsays = GetComponent<SimonSaysTake2>();
 
     }
 
@@ -26,17 +23,32 @@ public class NPCGameManger : MonoBehaviour {
     }
     void chooseGame()
     {
-        int randomNumber = Random.Range(1, 2);
-        if (randomNumber == 1)
-        {
-            //simon says
-            simonsays.enabled = true;
+        simonsays.enabled = true;
+        //int randomNumber = Random.Range(1, 2);
+        //if (randomNumber == 1)
+        //{
+        //    //simon says
+        //    simonsays.enabled = true;
 
-        }
-        else
-        {
-            //shapes
-        }
+        //}
+        //else
+        //{
+        //    //shapes
+        //}
+    }
+
+    public void winGame()
+    {
+
+        GameStates.Belief += 5;
+        convert();
+        GameEnd();
+    }
+    
+    public void loseGame()
+    {
+        GameStates.Belief -= 5;
+        GameEnd();
     }
     public void GameEnd()
     {
@@ -46,7 +58,22 @@ public class NPCGameManger : MonoBehaviour {
     }
     public void convert()
     {
-        Instantiate(converted, transform.position, Quaternion.identity);
+        Instantiate(converted, transform.position,transform.rotation);
         Destroy(gameObject);
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            chooseGame();
+        }
+    }
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            simonsays.turnoff();
+            GameEnd();
+        }
     }
 }

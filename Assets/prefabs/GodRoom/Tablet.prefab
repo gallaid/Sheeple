@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011572612904}
   - 212: {fileID: 212000010414783326}
-  - 61: {fileID: 61000012502912398}
   - 114: {fileID: 114000011637398698}
+  - 58: {fileID: 58000012829650162}
   m_Layer: 0
   m_Name: Tablet
   m_TagString: Untagged
@@ -35,15 +35,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010919443386}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.65, y: -2.37, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 22.285526, y: -17.488329, z: 0}
+  m_LocalScale: {x: 3.4315972, y: 3.4315972, z: 3.4315972}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!61 &61000012502912398
-BoxCollider2D:
+--- !u!58 &58000012829650162
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -55,7 +55,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 6.21, y: 1.71}
+  m_Radius: 2.69
 --- !u!114 &114000011637398698
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -64,12 +64,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010919443386}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f5324b1b6e7f844a83debb9c4d3221b, type: 3}
+  m_Script: {fileID: 11500000, guid: 9934ae5bae0c6bd438aa2269cccf1160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MissionStatus: {fileID: 0}
   PopSlider: {fileID: 0}
   BelSlider: {fileID: 0}
+  MissionStatus: {fileID: 0}
 --- !u!212 &212000010414783326
 SpriteRenderer:
   m_ObjectHideFlags: 1

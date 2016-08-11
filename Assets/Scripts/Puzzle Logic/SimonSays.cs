@@ -28,7 +28,7 @@ public class SimonSays : MonoBehaviour {
     public int PopulationIncrease=1;
     public int BeliefIncrease=5;
     public int BeliefDecrease=2;
-    private GameStates gs;
+
 
 
 
@@ -63,7 +63,7 @@ public class SimonSays : MonoBehaviour {
                 PlayerBubble = pic;
             }
         }
-        gs = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameStates>(); ;
+
 
     }
     void Update()
@@ -229,8 +229,6 @@ public class SimonSays : MonoBehaviour {
     {
         //gain follower convert
 
-        gs.Population += PopulationIncrease;
-        gs.Belief += BeliefIncrease;
         //GetComponentInParent<NPCGameManger>().convert();
 
 
@@ -239,7 +237,7 @@ public class SimonSays : MonoBehaviour {
     {
         //lose belief dont gain followers no convert
         
-        gs.Belief -= BeliefDecrease;
+
         LeaveGame();
         
     }

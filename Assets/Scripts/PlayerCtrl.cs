@@ -17,9 +17,9 @@ public class PlayerCtrl : MonoBehaviour {
         transform.position += move * speed * Time.deltaTime;
       
 
-        if (Input.anyKey)
-            anim.SetBool("IsWalking", true);
-        else anim.SetBool("IsWalking", false);
+        //if (Input.anyKey)
+        //    anim.SetBool("IsWalking", true);
+        //else anim.SetBool("IsWalking", false);
 
     }
 

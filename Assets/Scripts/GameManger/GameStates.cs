@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameStates : MonoBehaviour {
     public static GameStates Instance {
@@ -11,10 +12,11 @@ public class GameStates : MonoBehaviour {
     private int totalPopulation=15;
 
     
-    private static int population, belief;
-    enum Gamestate {MENU, WIN, BEGIN, MED, ADV};
+    public static int population, belief;
+   public enum Gamestate {MENU, WIN, BEGIN, MED, ADV};
     Gamestate gameState;
-    public bool Bull;
+    public static bool bull=true;
+    public static bool male = true;
     // Use this for initialization
     void Awake()
     {
@@ -38,7 +40,7 @@ public class GameStates : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        print(belief);
 
 	}
     void ChangeGameState()
@@ -56,13 +58,18 @@ public class GameStates : MonoBehaviour {
 
     }
 
-    public int Population
+    public static int Population
     {
         get{ return population; }
         set { population = value; }
     }
+    public static bool Bull
+    {
+        get { return bull; }
+        set { bull = value; }
+    }
 
-    public int Belief
+    public static int Belief
     {
         get { return belief; }
         set { belief = value; }
@@ -87,4 +94,12 @@ public class GameStates : MonoBehaviour {
             //able to go to the chapel
         }
     }
+    public static bool IsMale
+    {
+        get { return male; }
+        set { male = value; }
+    }
+
+
+
 }

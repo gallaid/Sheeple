@@ -9,8 +9,8 @@ public class HouseRender : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        GameStates gs = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameStates>();
-        if (gs.Bull)
+       
+        if (GameStates.Bull)
         {
             Instantiate(BullHead, GameObject.FindGameObjectWithTag("BullHouse").transform.position, GameObject.FindGameObjectWithTag("BullHouse").transform.rotation, GameObject.FindGameObjectWithTag("BullHouse").transform);
         }
