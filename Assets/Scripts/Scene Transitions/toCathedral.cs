@@ -9,8 +9,12 @@ public class toCathedral : MonoBehaviour
     {
         if (thing.gameObject.tag == "Player")
         {
-            GameStates.SpawnLocation = SpawnLocation.Cathedral;
-            SceneManager.LoadScene("Cathedral");
+            if (GameStates.getgameState == Gamestate.END)
+            {
+                GameStates.SpawnLocation = SpawnLocation.Cathedral;
+                SceneManager.LoadScene("Cathedral");
+            }
+            
         }
 
     }

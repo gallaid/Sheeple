@@ -14,6 +14,7 @@ TagManager:
   - OfficeSpawn
   - CathedralSpawn
   - CultHouseSpawn
+  - PauseMenu
   layers:
   - Default
   - TransparentFX

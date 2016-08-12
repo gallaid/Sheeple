@@ -6,7 +6,7 @@ public class NPCGameManger : MonoBehaviour {
     private SimonSaysTake2 simonsays;
     public GameObject converted;
 
-
+    
 
 
     // Use this for initialization
@@ -37,11 +37,11 @@ public class NPCGameManger : MonoBehaviour {
         //}
     }
 
-    public void winGame()
+    public void winGame(int populationgain)
     {
 
-        GameStates.Belief += 5;
-        GameStates.Population += 1;
+        GameStates.Belief += populationgain*5;
+        GameStates.Population += populationgain;
         GameStates.CheckGameState();
         
         convert();
@@ -61,7 +61,7 @@ public class NPCGameManger : MonoBehaviour {
     }
     public void convert()
     {
-        Instantiate(converted, transform.position,transform.rotation);
+        Instantiate(converted, transform.position,Quaternion.identity);
         Destroy(gameObject);
     }
     void OnTriggerEnter(Collider other)

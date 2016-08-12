@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.SceneManagement;
 
 public class SimonSaysTake2 : MonoBehaviour {
 
@@ -17,6 +18,7 @@ public class SimonSaysTake2 : MonoBehaviour {
     public int Guessespreturn;
 
     private float AlphaforNPC = 1f;
+    private float AlphaforPC = 1f;
     public bool NPCTurn=true;
 
     public int pcGuess = 0;
@@ -26,6 +28,11 @@ public class SimonSaysTake2 : MonoBehaviour {
 
     public int timesToLose = 3;
     public int losecounter = 0;
+
+    public int populationgain;
+
+    public bool bossbattle;
+    public bool is3d;
 
     
 
@@ -49,7 +56,7 @@ public class SimonSaysTake2 : MonoBehaviour {
         foreach (SpriteRenderer pic in PlayerSprites)
         {
             //print(pic.name);
-            if (pic.name == "ChatBox")
+            if (pic.name == "Speech Bubble")
             {
                 //print("Found CB");
                 PlayerBubble = pic;
@@ -65,6 +72,16 @@ public class SimonSaysTake2 : MonoBehaviour {
 	void Update () {
         WhosTurnIsIt();
         DisapearOverTime();
+        DIsapearOverTimePC();
+
+        if (NPCBubble.enabled == false)
+        {
+            NPCBubble.enabled = true;
+        }
+        if (PlayerBubble.enabled == false)
+        {
+            PlayerBubble.enabled = true;
+        }
 	}
 
     void WhosTurnIsIt()
@@ -165,10 +182,14 @@ public class SimonSaysTake2 : MonoBehaviour {
                 
                // print(number);
                 PlayerBubble.sprite = RGB[number];
+                AlphaforPC = 1f;
                 pcGuess++;
+
+
                 if (pcGuess >= Guessespreturn)
                 {
                     wins++;
+
                 }
 
 
@@ -185,8 +206,27 @@ public class SimonSaysTake2 : MonoBehaviour {
 
     void win()
     {
+        if (bossbattle)
+        {
+            if (GameStates.Bull)
+            {
+                SceneManager.LoadScene("BullEnd");
+            }
+            else SceneManager.LoadScene("PasthuluEnd");
+        }
+        NPCBubble.enabled = false;
+        PlayerBubble.enabled = false;
         turnoff();
-        GetComponent<NPCGameManger>().winGame();
+        if (is3d)
+        {
+            GetComponent<NPCGameManger>().winGame(populationgain);
+        }
+        else
+        {
+            GetComponent<NPCGameManger2d>().winGame(populationgain);
+        }
+        
+    
 
     }
     void lose()
@@ -228,6 +268,11 @@ public class SimonSaysTake2 : MonoBehaviour {
         //}
 
 
+    }
+    void DIsapearOverTimePC()
+    {
+        AlphaforPC -= Time.deltaTime*.5f;
+        PlayerBubble.color = new Color(1f, 1f, 1f, AlphaforPC);
     }
     
 

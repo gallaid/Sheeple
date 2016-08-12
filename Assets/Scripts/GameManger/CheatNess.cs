@@ -10,7 +10,7 @@ public class CheatNess : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.P))
         {
-            GameStates.Population += 5;
+            GameStates.Population += 1;
         }
 	
 	}

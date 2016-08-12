@@ -38,7 +38,7 @@ GameObject:
   - 4: {fileID: 4000010110011308}
   - 212: {fileID: 212000011993232930}
   m_Layer: 0
-  m_Name: ChatBox
+  m_Name: Speech Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,7 +93,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010309758108}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -91.1315, y: 36.98197, z: -222.60925}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 2}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -113,6 +113,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 25
+  Directions:
+  - {fileID: 21300002, guid: 03eaccdf4a6623d4ca4463e5810e150b, type: 3}
+  - {fileID: 21300000, guid: 03eaccdf4a6623d4ca4463e5810e150b, type: 3}
+  - {fileID: 21300004, guid: 03eaccdf4a6623d4ca4463e5810e150b, type: 3}
+  - {fileID: 21300006, guid: 03eaccdf4a6623d4ca4463e5810e150b, type: 3}
 --- !u!143 &143000010168869594
 CharacterController:
   m_ObjectHideFlags: 1

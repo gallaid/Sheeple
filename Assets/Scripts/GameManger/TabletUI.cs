@@ -22,7 +22,7 @@ public class TabletUI : MonoBehaviour {
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        print("hello");
+       // print("hello");
         if (other.gameObject.tag == "Player")
         {
             MissionStatus.enabled = false;
@@ -39,7 +39,7 @@ public class TabletUI : MonoBehaviour {
         sliders = MissionStatus.GetComponentsInChildren<Slider>();
         foreach (Slider slide in sliders)
         {
-            print(slide.name);
+            //print(slide.name);
             if (slide.name == "PopulationSlider")
             {
                 PopSlider = slide;

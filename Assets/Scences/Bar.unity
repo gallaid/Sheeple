@@ -1308,6 +1308,7 @@ MonoBehaviour:
   wins: 0
   timesToLose: 4
   losecounter: 0
+  populationgain: 5
 --- !u!114 &1051985745
 MonoBehaviour:
   m_ObjectHideFlags: 0

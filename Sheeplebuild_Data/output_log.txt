@@ -1,0 +1,75 @@
+Initialize engine version: 5.4.0f3 (a6d8d714de6f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 760 (ID=0x1187)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.063 seconds
+Platform assembly: D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 4920x1920 at -1080,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.019779 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.071285 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 287.
+Total: 0.160827 ms (FindLiveObjects: 0.011745 ms CreateObjectMapping: 0.012950 ms MarkObjects: 0.130408 ms  DeleteObjects: 0.004818 ms)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.600844 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 448.
+Total: 0.294549 ms (FindLiveObjects: 0.041260 ms CreateObjectMapping: 0.015661 ms MarkObjects: 0.228290 ms  DeleteObjects: 0.009035 ms)
+
+GodRoomUI (UnityEngine.Canvas) missionStatus
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.392130 ms
+
+Unloading 86 unused Assets to reduce memory usage. Loaded Objects now: 519.
+Total: 0.210822 ms (FindLiveObjects: 0.017166 ms CreateObjectMapping: 0.015058 ms MarkObjects: 0.157815 ms  DeleteObjects: 0.020781 ms)
+
+2 NPC Number
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+1 NPC Number
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+1 keydown
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+2 NPC Number
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+1 NPC Number
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+w keydown
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1a8c -> priority: 1 
+  Thread -> id: 21b4 -> priority: 1 

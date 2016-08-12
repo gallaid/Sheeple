@@ -37,11 +37,11 @@ public class NPCGameManger2d: MonoBehaviour {
         //}
     }
 
-    public void winGame()
+    public void winGame(int populationgain)
     {
 
-        GameStates.Belief += 5;
-        GameStates.Population += 5;
+        GameStates.Belief += populationgain*5;
+        GameStates.Population += populationgain;
         //convert();
         GameEnd();
     }

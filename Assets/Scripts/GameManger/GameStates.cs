@@ -17,8 +17,9 @@ public static class GameStates {
 
     public static void StartUp()
     {
-        LastgameState = gameState;
+
         gameState = Gamestate.BEGIN;
+        LastgameState = gameState;
         belief = 50;
         population = 0;
     }
@@ -88,7 +89,7 @@ public static class GameStates {
             //end game
         }
     }
-    static void CheckPop()
+    public static bool CheckPop()
     {
         if (population >= 15)
         {
@@ -101,15 +102,14 @@ public static class GameStates {
         else
             gameState = Gamestate.BEGIN;
 
-        CheckStateChange();
-    }
-    static void CheckStateChange()
-    {
+        
+
         if (LastgameState != gameState)
         {
             //gui change gamestate
             LastgameState = gameState;
-        }
+            return true;
+        }return false;
     }
 
 }
