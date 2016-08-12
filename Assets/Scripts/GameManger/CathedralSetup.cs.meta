@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9d2ed26cad0f6f8418adba7b78eab536
+timeCreated: 1470803933
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - bull: {fileID: 21300000, guid: 6e0133f0e911a8f43b8c0a58d550e455, type: 3}
+  - spagiti: {fileID: 21300000, guid: 4525620162134d346b39808458491f8f, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

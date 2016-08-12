@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: 8ea35d3901f8c8b46a2a7e5f399f599b
+timeCreated: 1470769174
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Speech_Bubbles_Assets_0
+    21300002: Speech_Bubbles_Assets_1
+    21300004: Speech_Bubbles_Assets_2
+    21300006: Speech_Bubbles_Assets_3
+    21300008: Speech_Bubbles_Assets_4
+    21300010: Speech_Bubbles_Assets_5
+    21300012: Red
+    21300014: Speech_Bubbles_Assets_7
+    21300016: Speech_Bubbles_Assets_8
+    21300018: Speech_Bubbles_Assets_9
+    21300020: Speech_Bubbles_Assets_10
+    21300022: Speech_Bubbles_Assets_11
+    21300024: Speech_Bubbles_Assets_12
+    21300026: Green
+    21300028: Speech_Bubbles_Assets_14
+    21300030: Speech_Bubbles_Assets_15
+    21300032: Speech_Bubbles_Assets_16
+    21300034: Speech_Bubbles_Assets_17
+    21300036: Speech_Bubbles_Assets_18
+    21300038: Speech_Bubbles_Assets_19
+    21300040: Blue
+    21300042: Speech_Bubbles_Assets_21
+    21300044: Speech_Bubbles_Assets_22
+    21300046: Speech_Bubbles_Assets_23
+    21300048: Speech_Bubbles_Assets_24
+    21300050: Speech_Bubbles_Assets_25
+    21300052: Speech_Bubbles_Assets_26
+    21300054: Speech_Bubbles_Assets_27
+    21300056: Speech_Bubbles_Assets_28
+    21300058: Speech_Bubbles_Assets_29
+    21300060: Speech_Bubbles_Assets_30
+    21300062: Speech_Bubbles_Assets_31
+    21300064: Speech_Bubbles_Assets_32
+    21300066: Speech_Bubbles_Assets_33
+    21300068: Speech_Bubbles_Assets_34
+    21300070: Speech_Bubbles_Assets_35
+    21300072: Speech_Bubbles_Assets_36
+    21300074: Speech_Bubbles_Assets_37
+    21300076: Speech_Bubbles_Assets_38
+    21300078: Speech_Bubbles_Assets_39
+    21300080: Speech_Bubbles_Assets_40
+    21300082: Speech_Bubbles_Assets_41
+    21300084: Speech_Bubbles_Assets_42
+    21300086: Wrong
+    21300088: Speech_Bubbles_Assets_44
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 25
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1644
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_1
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1644
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_2
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1644
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_3
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1644
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_4
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 1644
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_5
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 1644
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Red
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 1660
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_7
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1388
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_8
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1388
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_9
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1388
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_10
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1388
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_11
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 1388
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_12
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 1388
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Green
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 1404
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_14
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1132
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_15
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1132
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_16
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1132
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_17
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1132
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_18
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 1132
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_19
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 1132
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blue
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 1148
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_21
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 876
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_22
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 876
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_23
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 876
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_24
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 876
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_25
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 876
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_26
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 876
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_27
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 620
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_28
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 620
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_29
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 620
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_30
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 620
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_31
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 620
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_32
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 620
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_33
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 364
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_34
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 364
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_35
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 364
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_36
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 364
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_37
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 364
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_38
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 364
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_39
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 108
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_40
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 108
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_41
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 108
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_42
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 108
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Wrong
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 108
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Speech_Bubbles_Assets_44
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 108
+        width: 233
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

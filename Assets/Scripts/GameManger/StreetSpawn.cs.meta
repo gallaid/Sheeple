@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 2fce4ef383385124daba22378772497a
+timeCreated: 1470886893
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - MaleBull: {fileID: 1000012495020050, guid: 6162f3bb04103f64ba9afb390adf022e, type: 2}
+  - Femalebull: {fileID: 1000012904227700, guid: 6cddf7ba010be134aac213dd9f62c67f,
+      type: 2}
+  - MalePasthulu: {fileID: 1000011720915348, guid: 667586557914a754d849b8f6222d6b02,
+      type: 2}
+  - FemalePasthulu: {fileID: 1000010309758108, guid: bbf571fa36abda5448d04437b870a71b,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
