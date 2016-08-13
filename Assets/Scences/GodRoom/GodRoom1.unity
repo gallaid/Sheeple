@@ -619,7 +619,46 @@ Prefab:
     - target: {fileID: 114000012469017206, guid: 88a7e5108602fbc45aecbd42d58ed0ee,
         type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013653816144, guid: 88a7e5108602fbc45aecbd42d58ed0ee,
+        type: 2}
+      propertyPath: m_Text
+      value: "Walk around and spread the word of your god. When you approach someone
+        you automatically start a conversation. To convert them get into their mind
+        by matching the pattern that they say. If you match their conversation enough
+        then you will convert them and gain belief. \r\n\r\nConverting heads of establishments
+        is a great way to game many followers in one go. However the heads of these
+        establishments are harder then people you will met on the street.\r\n\r\nIf
+        you fail then you will lose belief. If you fail you will lose belief. If your
+        belief is completely depleted then you will fail. \r\n\r\nGo near the tablet
+        in your shrine to see how much beleif and population you have.\n\nGo out and
+        spread you God's glory."
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011944728354, guid: 88a7e5108602fbc45aecbd42d58ed0ee,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -199
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011944728354, guid: 88a7e5108602fbc45aecbd42d58ed0ee,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 49.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011944728354, guid: 88a7e5108602fbc45aecbd42d58ed0ee,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 439.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011944728354, guid: 88a7e5108602fbc45aecbd42d58ed0ee,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 398
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013653816144, guid: 88a7e5108602fbc45aecbd42d58ed0ee,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88a7e5108602fbc45aecbd42d58ed0ee, type: 2}

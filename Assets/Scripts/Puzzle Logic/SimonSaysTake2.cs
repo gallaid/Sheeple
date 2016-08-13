@@ -198,6 +198,7 @@ public class SimonSaysTake2 : MonoBehaviour {
             {
                 pcGuess = Guessespreturn;
                 PlayerBubble.sprite = RGB[0];
+                AlphaforPC = 1f;
                 losecounter++;
             }
 
