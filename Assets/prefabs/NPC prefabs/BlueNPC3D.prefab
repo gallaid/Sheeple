@@ -53,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012240643068}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 74.7, y: 0.5, z: 68.1}
+  m_LocalPosition: {x: 17.642557, y: 0.47, z: -174.1}
   m_LocalScale: {x: 1.9438107, y: 1.943812, z: 0.4319581}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_Children:
@@ -85,6 +85,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   converted: {fileID: 1000012460429812, guid: a5fa466a0c7f2604fb37bf523ec80f15, type: 2}
+  soundEffects:
+  - {fileID: 8300000, guid: 489fa916170cde94ebb12e75d73bba1d, type: 3}
+  - {fileID: 8300000, guid: 1031dd2557cfb9b4db0c57121c6e8e51, type: 3}
+  - {fileID: 8300000, guid: c8d62c9281f33f441927f239786516e5, type: 3}
+  - {fileID: 8300000, guid: 01b5b019b4fb3754a92d587ed684161b, type: 3}
+  - {fileID: 8300000, guid: 344363f18a1bf884f98b0d876e5c9194, type: 3}
 --- !u!114 &114000014056504344
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -114,6 +120,10 @@ MonoBehaviour:
   timesToLose: 3
   losecounter: 0
   populationgain: 1
+  bossbattle: 0
+  is3d: 0
+  wrong: {fileID: 8300000, guid: 8021846bf5623cc44a0cdae1dd4b17fd, type: 3}
+  right: {fileID: 8300000, guid: b75c903b6705ed24fbd9b087dbfcb5a1, type: 3}
 --- !u!135 &135000010699699640
 SphereCollider:
   m_ObjectHideFlags: 1

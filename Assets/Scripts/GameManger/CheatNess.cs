@@ -12,6 +12,13 @@ public class CheatNess : MonoBehaviour {
         {
             GameStates.Population += 1;
         }
-	
-	}
+
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            GameStates.Belief = 0;
+        }
+
+
+    }
 }

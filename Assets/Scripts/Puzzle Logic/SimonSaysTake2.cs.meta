@@ -1,10 +1,14 @@
 fileFormatVersion: 2
 guid: 99b8210629165db41b8e2fedded9f5d0
-timeCreated: 1470718431
+timeCreated: 1471137996
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - NPCBubble: {instanceID: 0}
+  - PlayerBubble: {instanceID: 0}
+  - wrong: {fileID: 8300000, guid: 8021846bf5623cc44a0cdae1dd4b17fd, type: 3}
+  - right: {fileID: 8300000, guid: b75c903b6705ed24fbd9b087dbfcb5a1, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

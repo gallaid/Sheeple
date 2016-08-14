@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class NPCGameManger2d: MonoBehaviour {
 
     private SimonSaysTake2 simonsays;
-   // public GameObject converted;
+    // public GameObject converted;
 
+    AudioSource SoundEffectSource=SoundManager.SoundEffectPlayer;
 
+    public AudioClip[] soundEffects = new AudioClip[5];
 
 
     // Use this for initialization
@@ -19,6 +22,11 @@ public class NPCGameManger2d: MonoBehaviour {
 
     void Update()
     {
+
+        if (SoundEffectSource == null)
+        {
+            SoundEffectSource = SoundManager.SoundEffectPlayer;
+        }
         //chooseGame();
     }
     void chooseGame()
@@ -53,6 +61,17 @@ public class NPCGameManger2d: MonoBehaviour {
     }
     public void GameEnd()
     {
+        if (GameStates.Belief <= 0)
+        {
+            if (GameStates.Bull)
+            {
+                SceneManager.LoadScene("BullLose");
+            }
+            else
+            {
+                SceneManager.LoadScene("PasthuluLose");
+            }
+        }
         simonsays.enabled = false;
         
         //symbols.enabled=false;
@@ -62,7 +81,9 @@ public class NPCGameManger2d: MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
-            
+            SoundEffectSource.clip = soundEffects[RanNumb()];
+
+            SoundEffectSource.Play();
             chooseGame();
         }
     }
@@ -72,5 +93,13 @@ public class NPCGameManger2d: MonoBehaviour {
         {
             GameEnd();
         }
+    }
+
+
+
+
+    int RanNumb()
+    {
+        return Random.Range(0, 4);
     }
 }

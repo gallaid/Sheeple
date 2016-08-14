@@ -4,7 +4,7 @@ Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
     Renderer: NVIDIA GeForce GTX 760 (ID=0x1187)
     Vendor:   NVIDIA
-    VRAM:     3072 MB
+    VRAM:     4026 MB
 Begin MonoManager ReloadAssembly
 Platform assembly: D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\UnityEngine.dll into Unity Child Domain
@@ -16,37 +16,71 @@ Platform assembly: D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\UnityEngi
 Loading D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.063 seconds
+- Completed reload, in  0.088 seconds
 Platform assembly: D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\unity Projects\Sheeple\Sheeplebuild_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 4920x1920 at -1080,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.019779 ms
+UnloadTime: 1.010141 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.071285 ms
+UnloadTime: 4.874218 ms
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 287.
-Total: 0.160827 ms (FindLiveObjects: 0.011745 ms CreateObjectMapping: 0.012950 ms MarkObjects: 0.130408 ms  DeleteObjects: 0.004818 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 301.
+Total: 0.222869 ms (FindLiveObjects: 0.032526 ms CreateObjectMapping: 0.012649 ms MarkObjects: 0.165947 ms  DeleteObjects: 0.011444 ms)
 
-Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.600844 ms
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.362313 ms
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 448.
-Total: 0.294549 ms (FindLiveObjects: 0.041260 ms CreateObjectMapping: 0.015661 ms MarkObjects: 0.228290 ms  DeleteObjects: 0.009035 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 477.
+Total: 0.209316 ms (FindLiveObjects: 0.016564 ms CreateObjectMapping: 0.012649 ms MarkObjects: 0.172272 ms  DeleteObjects: 0.007529 ms)
 
-GodRoomUI (UnityEngine.Canvas) missionStatus
+Can not play a disabled audio source
+ 
+(Filename:  Line: 432)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.346652 ms
+
+Unloading 92 unused Assets to reduce memory usage. Loaded Objects now: 550.
+Total: 3.770712 ms (FindLiveObjects: 0.028611 ms CreateObjectMapping: 0.015661 ms MarkObjects: 0.166851 ms  DeleteObjects: 3.558986 ms)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 432)
+
+gibberish 4 (UnityEngine.AudioClip)
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.392130 ms
+Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.615300 ms
 
-Unloading 86 unused Assets to reduce memory usage. Loaded Objects now: 519.
-Total: 0.210822 ms (FindLiveObjects: 0.017166 ms CreateObjectMapping: 0.015058 ms MarkObjects: 0.157815 ms  DeleteObjects: 0.020781 ms)
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 643.
+Total: 0.836062 ms (FindLiveObjects: 0.032828 ms CreateObjectMapping: 0.014456 ms MarkObjects: 0.156008 ms  DeleteObjects: 0.632166 ms)
 
 2 NPC Number
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+2 NPC Number
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+1 NPC Number
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+2 NPC Number
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+3 NPC Number
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+1 NPC Number
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
@@ -58,18 +92,6 @@ Total: 0.210822 ms (FindLiveObjects: 0.017166 ms CreateObjectMapping: 0.015058 m
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
-2 NPC Number
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-1 NPC Number
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
-w keydown
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
-
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1a8c -> priority: 1 
-  Thread -> id: 21b4 -> priority: 1 
+  Thread -> id: 37f0 -> priority: 1 
+  Thread -> id: 1fe0 -> priority: 1 

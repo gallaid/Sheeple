@@ -13,9 +13,18 @@ public class toCathedral : MonoBehaviour
             {
                 GameStates.SpawnLocation = SpawnLocation.Cathedral;
                 SceneManager.LoadScene("Cathedral");
+                DoorSound();
             }
             
         }
+
+    }
+    public AudioClip door;
+    void DoorSound()
+    {
+        AudioSource soundseffect = SoundManager.SoundEffectPlayer;
+        soundseffect.clip = door;
+        soundseffect.Play();
 
     }
 

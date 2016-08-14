@@ -31,3 +31,7 @@ EditorBuildSettings:
     path: Assets/Scences/BullEnd.unity
   - enabled: 1
     path: Assets/Scences/Credits.unity
+  - enabled: 1
+    path: Assets/Scences/BullLose.unity
+  - enabled: 1
+    path: Assets/Scences/PasthuluLose.unity

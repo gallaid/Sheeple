@@ -1,12 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class NPCGameManger : MonoBehaviour {
 
     private SimonSaysTake2 simonsays;
     public GameObject converted;
 
-    
+
+    AudioSource SoundEffectSource;
+    AudioSource Music;
+    public AudioClip[] soundEffects = new AudioClip[5];
+
 
 
     // Use this for initialization
@@ -14,12 +19,18 @@ public class NPCGameManger : MonoBehaviour {
     {
         
         simonsays = GetComponent<SimonSaysTake2>();
+        SoundEffectSource = SoundManager.SoundEffectPlayer;
 
     }
 
     void Update()
     {
-        //chooseGame();
+        if (SoundEffectSource == null)
+        {
+            SoundEffectSource = SoundManager.SoundEffectPlayer;
+
+        }
+        
     }
     void chooseGame()
     {
@@ -55,6 +66,17 @@ public class NPCGameManger : MonoBehaviour {
     }
     public void GameEnd()
     {
+        if (GameStates.Belief <= 0)
+        {
+            if (GameStates.Bull)
+            {
+                SceneManager.LoadScene("BullLose");
+            }
+            else
+            {
+                SceneManager.LoadScene("PasthuluLose");
+            }
+        }
         simonsays.enabled = false;
         
         //symbols.enabled=false;
@@ -69,6 +91,11 @@ public class NPCGameManger : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             chooseGame();
+
+            SoundEffectSource.clip = soundEffects[RanNumb()];
+            print(SoundEffectSource.clip);
+            SoundEffectSource.Play();
+           
         }
     }
     void OnTriggerExit(Collider other)
@@ -78,5 +105,10 @@ public class NPCGameManger : MonoBehaviour {
             simonsays.turnoff();
             GameEnd();
         }
+    }
+
+    int RanNumb()
+    {
+        return Random.Range(0, 4);
     }
 }

@@ -5,12 +5,27 @@ using UnityEngine.SceneManagement;
 public class EndtoCredsAnykey : MonoBehaviour {
 
 
-	
-	// Update is called once per frame
+
+    bool wait=false;
+    void Start()
+    {
+        StartCoroutine(waitforseconds());
+    }
 	void Update () {
         if (Input.anyKeyDown)
         {
-            SceneManager.LoadScene("Credits");
+            if (!wait)
+            {
+                SceneManager.LoadScene("Credits");
+            }
+
         }
 	}
+
+
+    IEnumerator waitforseconds()
+    {
+        yield return new WaitForSeconds(5);
+        wait = true;
+    }
 }

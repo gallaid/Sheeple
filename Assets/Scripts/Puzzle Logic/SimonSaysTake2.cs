@@ -34,7 +34,11 @@ public class SimonSaysTake2 : MonoBehaviour {
     public bool bossbattle;
     public bool is3d;
 
-    
+    public AudioClip wrong;
+    public AudioClip right;
+    AudioSource SoundEffectSource = SoundManager.SoundEffectPlayer;
+
+
 
 
     // Use this for initialization
@@ -82,7 +86,15 @@ public class SimonSaysTake2 : MonoBehaviour {
         {
             PlayerBubble.enabled = true;
         }
-	}
+
+
+
+        if (SoundEffectSource == null )
+        {
+            SoundEffectSource = SoundManager.SoundEffectPlayer;
+            
+        }
+    }
 
     void WhosTurnIsIt()
     {
@@ -189,10 +201,10 @@ public class SimonSaysTake2 : MonoBehaviour {
                 if (pcGuess >= Guessespreturn)
                 {
                     wins++;
+                    SoundEffectSource.clip = right;
+                    SoundEffectSource.Play();
 
                 }
-
-
             }
             else
             {
@@ -200,6 +212,8 @@ public class SimonSaysTake2 : MonoBehaviour {
                 PlayerBubble.sprite = RGB[0];
                 AlphaforPC = 1f;
                 losecounter++;
+                SoundEffectSource.clip = wrong;
+                SoundEffectSource.Play();
             }
 
         }

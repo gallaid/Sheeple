@@ -241,6 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 167e57a57c7fab64da8ce322df831360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  door: {fileID: 0}
 --- !u!1001 &236517215
 Prefab:
   m_ObjectHideFlags: 0
@@ -629,6 +630,7 @@ GameObject:
   - 68: {fileID: 514431829}
   - 68: {fileID: 514431828}
   - 68: {fileID: 514431827}
+  - 114: {fileID: 514431831}
   m_Layer: 0
   m_Name: Office
   m_TagString: Untagged
@@ -760,6 +762,60 @@ EdgeCollider2D:
   m_Points:
   - {x: 0.016233318, y: 0.00003306071}
   - {x: 2.4945893, y: -0.0053782146}
+--- !u!114 &514431831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 514431824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43ae25f7767772540b34935ec29c1787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Office: {fileID: 8300000, guid: ba610952176d66f428b62dacaaf313a3, type: 3}
+--- !u!1001 &601289569
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000010985254034, guid: 58ff0e5bccb7d0b48a414a7fe1fb8004, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 635.11237
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010985254034, guid: 58ff0e5bccb7d0b48a414a7fe1fb8004, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 312.03616
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010985254034, guid: 58ff0e5bccb7d0b48a414a7fe1fb8004, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -174.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010985254034, guid: 58ff0e5bccb7d0b48a414a7fe1fb8004, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010985254034, guid: 58ff0e5bccb7d0b48a414a7fe1fb8004, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010985254034, guid: 58ff0e5bccb7d0b48a414a7fe1fb8004, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010985254034, guid: 58ff0e5bccb7d0b48a414a7fe1fb8004, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010985254034, guid: 58ff0e5bccb7d0b48a414a7fe1fb8004, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 58ff0e5bccb7d0b48a414a7fe1fb8004, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &686469938
 GameObject:
   m_ObjectHideFlags: 0
@@ -1424,6 +1480,10 @@ MonoBehaviour:
   timesToLose: 3
   losecounter: 0
   populationgain: 5
+  bossbattle: 0
+  is3d: 0
+  wrong: {fileID: 8300000, guid: 8021846bf5623cc44a0cdae1dd4b17fd, type: 3}
+  right: {fileID: 8300000, guid: b75c903b6705ed24fbd9b087dbfcb5a1, type: 3}
 --- !u!58 &1486358231
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1449,6 +1509,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb702fd58500514d8c72efbe03781eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundEffects:
+  - {fileID: 8300000, guid: 489fa916170cde94ebb12e75d73bba1d, type: 3}
+  - {fileID: 8300000, guid: 1031dd2557cfb9b4db0c57121c6e8e51, type: 3}
+  - {fileID: 8300000, guid: c8d62c9281f33f441927f239786516e5, type: 3}
+  - {fileID: 8300000, guid: 01b5b019b4fb3754a92d587ed684161b, type: 3}
+  - {fileID: 8300000, guid: 344363f18a1bf884f98b0d876e5c9194, type: 3}
 --- !u!4 &1486358234 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011254254208, guid: 46adf1b2c48930448b6e7ab00c5f650a,

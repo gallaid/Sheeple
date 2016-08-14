@@ -9,8 +9,19 @@ public class toStreet : MonoBehaviour
     {
         if (thing.gameObject.tag == "Player")
         {
+            
             SceneManager.LoadScene("StreetTest");
+            DoorSound();
+
         }
+
+    }
+    public AudioClip door;
+    void DoorSound()
+    {
+        AudioSource soundseffect = SoundManager.SoundEffectPlayer;
+        soundseffect.clip = door;
+        soundseffect.Play();
 
     }
 

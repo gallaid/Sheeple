@@ -22,9 +22,18 @@ public class toGodRoom : MonoBehaviour
             {
                 SceneManager.LoadScene("GodRoom3");
             }
-            
-            
+
+            DoorSound();
         }
+
+    }
+
+    public AudioClip door;
+    void DoorSound()
+    {
+        AudioSource soundseffect = SoundManager.SoundEffectPlayer;
+        soundseffect.clip = door;
+        soundseffect.Play();
 
     }
 

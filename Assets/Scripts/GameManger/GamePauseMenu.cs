@@ -50,7 +50,7 @@ public class GamePauseMenu : MonoBehaviour {
             }else if(pausemenu.enabled == true){
                 Time.timeScale = 1;
                 pausemenu.enabled = false;
-                Upgrade.color = new Color(1f, 1f, 1f, 0f);
+                Upgrade.enabled = false;
             }
 
         }
@@ -61,7 +61,7 @@ public class GamePauseMenu : MonoBehaviour {
             {
                 Upgrade.sprite = CitadelUnlocked;
             }
-            Upgrade.color = new Color(1f, 1f, 1f, 1f);
+            Upgrade.enabled = true;
             Pause();
         }
 

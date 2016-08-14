@@ -6,6 +6,9 @@ public class StreetSpawn : MonoBehaviour {
     public GameObject Femalebull;
     public GameObject MalePasthulu;
     public GameObject FemalePasthulu;
+    AudioSource Music;
+    AudioSource Soundeffects;
+    public AudioClip Streetnosie;
     
 
     SpawnLocation SP = GameStates.SpawnLocation;
@@ -38,11 +41,12 @@ public class StreetSpawn : MonoBehaviour {
             spawn(SpawnHere);
             //spawn at office
         }
-        
-
-        
 
 
+
+        Music=SoundManager.MusicPlayer;
+        Soundeffects = SoundManager.MusicPlayer;
+        MusicPlayer();
 
     }
     void spawn(GameObject SpawnPoint)
@@ -72,6 +76,21 @@ public class StreetSpawn : MonoBehaviour {
         }
     }
 
+    void Update()
+    {
+        if (Music == null)
+        {
+            Soundeffects= SoundManager.SoundEffectPlayer;
+            Music = SoundManager.MusicPlayer;
+            MusicPlayer();
+        }
+    }
+
+    void MusicPlayer()
+    {
+        Music.clip = Streetnosie;
+        Music.Play();
+    }
 
 
 }

@@ -11,9 +11,20 @@ public class toOffice : MonoBehaviour
         {
             GameStates.SpawnLocation = SpawnLocation.Office;
             SceneManager.LoadScene("Office1");
+            DoorSound();
         }
 
     }
+
+    public AudioClip door;
+    void DoorSound()
+    {
+        AudioSource soundseffect = SoundManager.SoundEffectPlayer;
+        soundseffect.clip = door;
+        soundseffect.Play();
+
+    }
+
 
 }
 
